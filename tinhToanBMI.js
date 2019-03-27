@@ -1,7 +1,8 @@
 function tinhBmi() {
     var weight = parseInt(prompt("Nhap can nang"));
-    var height = parseInt(prompt("Nhap chieu cao (vi du: 1.78)"));
-    var bmi = weight / Math.pow(height, 2);
+    var height = parseFloat(prompt("Nhap chieu cao (vi du: 1.78)"));
+    var bmi = (weight / (height*height));
+    console.log(bmi)
     if (bmi < 18.5) {
         document.write("Underweight");
     } else if (18.5 <= bmi < 25.0) {
